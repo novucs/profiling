@@ -27,7 +27,7 @@ def get_asyncio_ignoring_codes(__):
     return map(get_function_code, [
         asyncio.BaseEventLoop.run_until_complete,
         asyncio.BaseEventLoop.run_forever, asyncio.BaseEventLoop._run_once,
-#        asyncio.Handle._run, asyncio.Task._wakeup, asyncio.Task._step,
+        asyncio.Handle._run, # asyncio.Task._wakeup, asyncio.Task._step,
     ])
 
 
